@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form id="studentForm">
+            <label>First Name <span>*</span></label>
+            <div class="field-row">
+                <input type="text" id="firstName">
+                <span class="error-message" id="firstNameError"></span>
+            </div>
+
+            <label>Last Name <span>*</span></label>
+            <div class="field-row">
+                <input type="text" id="lastName">
+                <span class="error-message" id="lastNameError"></span>
+            </div>
+
+            <label>Student ID <span>*</span></label>
+            <div class="field-row">
+                <input type="text" id="studentId">
+                <span class="error-message" id="studentIdError"></span>
+            </div>
+
+            <label>Email <span>*</span></label>
+            <div class="field-row">
+                <input type="text" id="email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <label>Credit Completed <span>*</span></label>
+            <div class="field-row">
+                <input type="number" id="credit">
+                <span class="error-message" id="creditError"></span>
+            </div>
+
+            <label>Department <span>*</span></label>
+            <div class="field-row">
+                <select id="department">
+                    <option value="">Select Dept</option>
+                    <option value="CSE">CSE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="BBA">IPE</option>
+                    <option value="English">Architecture</option>
+                </select>
+                <span class="error-message" id="departmentError"></span>
+            </div>
+
+            <div class="button-area">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="list-container">
+        <h2>Registered Student List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Credit Completed</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
